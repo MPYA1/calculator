@@ -15,7 +15,10 @@ def cal_num(a,b:float)->float:
     elif choice==5:
         return a**b
     elif choice==6:
+        if b <= 0:
+            raise ValueError("b is negative")
         return num_root(a,b)
 
 
 print(cal_num(8,3))
+
